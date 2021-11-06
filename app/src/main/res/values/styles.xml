@@ -1,0 +1,10 @@
+<resources>
+	<!-- Base application theme. -->
+	<style name="AppTheme"
+		   parent="@android:style/Theme.Material.Light">
+		<!-- Customize your theme here. -->
+		<item name="android:statusBarColor">#66aaff</item>
+		<item name="android:colorPrimary">#66aaff</item>
+	</style>
+
+</resources>

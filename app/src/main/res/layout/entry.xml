@@ -1,0 +1,51 @@
+<TableLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:stretchColumns="*"
+	android:id="@+id/dataEntry">
+
+	<TableRow
+		android:gravity="center"
+		android:layout_width="1dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:paddingVertical="10dp"
+			android:id="@+id/startText"
+			android:text="startTime"
+			android:textColor="#000000"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:paddingVertical="10dp"
+			android:id="@+id/endText"
+			android:text="endTime"
+			android:textColor="#000000"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:paddingVertical="10dp"
+			android:id="@+id/costTime"
+			android:text="costTime"
+			android:textColor="#000000"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:paddingVertical="10dp"
+			android:id="@+id/fullText"
+			android:text="fullTime"
+			android:textColor="#000000"/>
+
+	</TableRow>
+
+</TableLayout>
+    

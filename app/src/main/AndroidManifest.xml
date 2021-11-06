@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		  package="com.voila.charge">
+
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+	<application
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:roundIcon="@mipmap/ic_launcher_round"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+		<service
+			android:name=".ChargeService"
+			android:enabled="true"
+			android:exported="false"
+			android:process=":record">
+		</service>
+
+		<activity
+			android:name=".ChartActivity"
+			android:label="@string/title_activity_chart">
+		</activity>
+		<activity android:name=".MainActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<receiver android:name=".ChargeReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+				<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+			</intent-filter>
+		</receiver>
+	</application>
+
+</manifest>
